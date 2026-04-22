@@ -27,6 +27,11 @@ const blessings = [
     author: "Pawan",
     relation: "Jijaji"
   },
+  {
+    text: "Since you were tiny, I've prayed you would find someone who treasures you as much as I do. Gaurav's devotion to you is the answer to that lifelong prayer. Happy anniversary!",
+    author: "Binu",
+    relation: "Sister"
+  },
 ];
 
 export function FamilyBlessings() {
