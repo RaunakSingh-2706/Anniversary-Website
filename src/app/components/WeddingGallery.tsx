@@ -4,27 +4,21 @@ import { useState } from "react";
 const photos = [
   {
     url: "/2.jpeg",
-    title: "Traditional Elegance"
   },
   {
     url: "/3.jpeg",
-    title: "Sacred Moments"
   },
   {
     url: "/4.jpeg",
-    title: "Marigold Blessings"
   },
   {
     url: "/5.jpeg",
-    title: "Haldi Ceremony"
   },
   {
     url: "/6.jpeg",
-    title: "Together Forever"
   },
   {
     url: "/7.jpeg",
-    title: "Floral Dreams"
   }
 ];
 
@@ -63,12 +57,8 @@ export function WeddingGallery() {
               <div className="aspect-[4/5] overflow-hidden">
                 <img
                   src={photo.url}
-                  alt={photo.title}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <h3 className="text-white text-xl font-serif">{photo.title}</h3>
               </div>
               <div className="absolute top-4 right-4 w-12 h-12 bg-yellow-400/90 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <svg className="w-6 h-6 text-red-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -91,7 +81,6 @@ export function WeddingGallery() {
               initial={{ scale: 0.8 }}
               animate={{ scale: 1 }}
               src={photos[selectedImage].url}
-              alt={photos[selectedImage].title}
               className="max-w-full max-h-full object-contain rounded-lg"
             />
           </motion.div>
