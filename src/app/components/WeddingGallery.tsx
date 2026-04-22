@@ -6,7 +6,7 @@ const photos = [
     url: "/2.jpeg",
   },
   {
-    url: "/3.jpeg",
+    url: "/3.png",
   },
   {
     url: "/4.jpeg",
